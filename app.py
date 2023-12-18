@@ -11,7 +11,7 @@ ENV = 'dev'
 
 if ENV == 'dev':
     app.debug = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:KNOWthyself007#@localhost/lexus'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://username:password@host/database'
 else:
     app.debug = False
     app.config['SQLALCHEMY_DATABASE_URI'] = ''
